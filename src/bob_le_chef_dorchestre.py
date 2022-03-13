@@ -2,7 +2,5 @@ from ursina import *
 from scene import *
 
 
-def bob(nom_instance, new_entities: Dict[Entity]):
-    nom_instance.set_entities(new_entities)
-
-# vhdtuf
+def bob(entity1: Dict[str, Entity], entity2: Dict[str, Entity]):
+    return {**entity1, **entity2}
